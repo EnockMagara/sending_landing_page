@@ -19,46 +19,40 @@ export default function HowItWorks() {
 
       {/* Section Title */}
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-lg font-semibold text-[rgb(227,173,125)] font-poppins">How It Works</h2>
+        <h2 className="text-lg font-semibold text-[rgb(227,173,125)] font-poppins">Experience It Live</h2>
         <p className="mt-4 text-4xl font-semibold tracking-tight text-[rgb(242,245,249)] sm:text-5xl font-poppins">
-          Voice-First Navigation
+          Talk. Listen. Feel.
         </p>
         <p className="mt-6 text-lg text-[rgb(242,245,249)] font-montserrat">
-          See how Seer's voice-first navigation works for visually impaired users.
+          Watch how Seer responds to real conversation, delivers instant guidance, and uses haptic feedback to keep you safe. This isn't pre-recorded navigation—it's a live AI companion adapting to your world in real-time.
         </p>
       </div>
 
-      {/* Video Container - Phone Shaped */}
+      {/* Video Container - iPhone 16 Pro Max Shaped */}
       <div className="mt-16 flex justify-center">
         <div className="relative">
-          {/* Phone Frame */}
-          <div className="relative w-80 h-[600px] bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+          {/* iPhone 16 Pro Max Frame (aspect ratio ~19.5:9) */}
+          <div className="relative w-[360px] h-[780px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
             {/* Phone Screen */}
             <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden relative">
-              {/* Status Bar */}
-              <div className="absolute top-0 left-0 right-0 h-8 bg-black flex items-center justify-between px-6 text-white text-sm z-10">
-                <span>9:41</span>
-                <div className="flex items-center gap-1">
-                  <div className="w-4 h-2 bg-white rounded-sm"></div>
-                  <div className="w-4 h-2 bg-white rounded-sm"></div>
-                  <div className="w-4 h-2 bg-white rounded-sm"></div>
-                </div>
-              </div>
+              {/* Dynamic Island */}
+              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-32 h-8 bg-black rounded-full z-10"></div>
               
               {/* Video Content */}
               <video
                 controls
+                loop
+                muted
+                playsInline
                 preload="metadata"
-                className="w-full h-full object-cover rounded-[2.5rem]"
-                style={{ marginTop: '2rem' }}
+                className="w-full h-full object-cover"
               >
-                <source src="/demo.MOV" type="video/quicktime" />
-                <source src="/demo.mp4" type="video/mp4" />
+                <source src="/Demo_Video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
               {/* Home Indicator */}
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white rounded-full opacity-60"></div>
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white rounded-full opacity-60 z-10"></div>
             </div>
           </div>
         </div>

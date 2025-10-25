@@ -189,21 +189,96 @@ export default function DevelopmentProcess() {
 
         {/* Reflection */}
         <div className="mt-20">
-          <div className="mx-auto max-w-3xl text-center">
-            <h3 className="text-2xl font-bold text-[rgb(242,245,249)] font-poppins mb-6">
+          <div className="mx-auto max-w-4xl">
+            <h3 className="text-2xl font-bold text-[rgb(242,245,249)] font-poppins mb-6 text-center">
               What We Learned
             </h3>
             <div className="bg-gradient-to-r from-[rgb(227,173,125)]/10 to-[rgb(227,173,125)]/5 rounded-2xl p-8 border border-[rgb(227,173,125)]/20">
-              <p className="text-lg text-[rgb(242,245,249)] font-montserrat leading-relaxed mb-4">
-                "Building Seer taught us that the best assistive technology doesn't just solve problems—it empowers users 
-                to live more independently. The most valuable insights came from real users who showed us what truly matters 
-                in their daily navigation challenges."
+              <p className="text-lg text-[rgb(242,245,249)] font-montserrat leading-relaxed mb-6 italic">
+                "We built Seer from 1:30 PM to 5:30 PM today—four intense hours of non-stop development, pivoting, and learning. 
+                It was a crazy journey that taught us more about building accessible technology than we ever imagined."
               </p>
-              <p className="text-lg text-[rgb(242,245,249)] font-montserrat leading-relaxed">
-                We learned that accessibility isn't just about compliance—it's about creating technology that feels natural, 
-                reliable, and genuinely helpful. Every decision we made was guided by the question: 'Will this make someone's 
-                life easier and more independent?'
-              </p>
+              
+              <div className="space-y-4 text-[rgb(242,245,249)]/90 font-montserrat">
+                <p>
+                  In those four hours, we pivoted through multiple frameworks and APIs: from ElevenLabs to OpenAI TTS to Deepgram 
+                  for speech synthesis, experimented with React Native and Expo Go across various SDK versions and node package.json 
+                  configurations, and learned to use Expo Doctor on the fly.
+                </p>
+                
+                <p>
+                  We navigated the complexities of managing audio routes, built a Flask API server running from a laptop, and developed 
+                  both a frontend website for submission and a mobile application on Expo Go—which proved especially tedious. The most 
+                  challenging part? <strong className="text-[rgb(227,173,125)]">Building UI for the blind.</strong> We implemented haptic 
+                  feedback for danger levels, designed voice-first interactions, and created an entirely audio-driven experience.
+                </p>
+                
+                <p>
+                  Nothing in our codebase is hardcoded—everything is dynamic, scalable, and built with real-world usage in mind. Through 
+                  multiple ideation rounds and technical pivots, we completely shifted to OpenAI for speech-to-text, LLM reasoning, and 
+                  danger level assessment. It was a massive development effort compressed into an impossible timeframe, but we emerged 
+                  with a working product and invaluable lessons about rapid prototyping and user-centered AI.
+                </p>
+
+                <div className="mt-6 pt-6 border-t border-[rgb(227,173,125)]/20">
+                  <h4 className="text-xl font-semibold text-[rgb(227,173,125)] mb-4 font-poppins">
+                    What's Next: Our Week-One Roadmap
+                  </h4>
+                  
+                  <p className="mb-4">
+                    Looking ahead to next week, our immediate priority is <strong className="text-[rgb(227,173,125)]">human-centric validation</strong>. 
+                    We'll conduct testing sessions with visually impaired users to understand the exact challenges they've faced throughout 
+                    their lives and ensure Seer truly addresses their needs.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div className="bg-[rgb(227,173,125)]/5 rounded-lg p-4 border border-[rgb(227,173,125)]/10">
+                      <h5 className="font-semibold text-[rgb(242,245,249)] mb-2 flex items-center">
+                        <span className="text-[rgb(227,173,125)] mr-2">⚡</span>
+                        Performance Optimization
+                      </h5>
+                      <p className="text-sm">
+                        Use lower-parameter models for faster LLM inference and build custom YOLO models for quicker object detection
+                      </p>
+                    </div>
+
+                    <div className="bg-[rgb(227,173,125)]/5 rounded-lg p-4 border border-[rgb(227,173,125)]/10">
+                      <h5 className="font-semibold text-[rgb(242,245,249)] mb-2 flex items-center">
+                        <span className="text-[rgb(227,173,125)] mr-2">📱</span>
+                        LiDAR Integration
+                      </h5>
+                      <p className="text-sm">
+                        Leverage LiDAR capabilities on modern iPhones and Android devices for enhanced spatial awareness
+                      </p>
+                    </div>
+
+                    <div className="bg-[rgb(227,173,125)]/5 rounded-lg p-4 border border-[rgb(227,173,125)]/10">
+                      <h5 className="font-semibold text-[rgb(242,245,249)] mb-2 flex items-center">
+                        <span className="text-[rgb(227,173,125)] mr-2">💰</span>
+                        Cost Reduction
+                      </h5>
+                      <p className="text-sm">
+                        Bring operational costs down to under $5/month (from preliminary $2/month testing) for a sustainable $20 subscription model
+                      </p>
+                    </div>
+
+                    <div className="bg-[rgb(227,173,125)]/5 rounded-lg p-4 border border-[rgb(227,173,125)]/10">
+                      <h5 className="font-semibold text-[rgb(242,245,249)] mb-2 flex items-center">
+                        <span className="text-[rgb(227,173,125)] mr-2">🎯</span>
+                        Personalization
+                      </h5>
+                      <p className="text-sm">
+                        Build adaptive systems that learn from user patterns and become increasingly customized over time
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="mt-6 text-[rgb(242,245,249)] font-semibold">
+                    This isn't just about building technology—it's about empowering people to navigate the world with greater 
+                    independence and confidence. We're building human-centric AI innovation that truly makes a difference.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
