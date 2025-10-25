@@ -1,4 +1,4 @@
-import { MicrophoneIcon, EyeIcon, MapIcon, SpeakerWaveIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
+import { MicrophoneIcon, EyeIcon, MapIcon, SpeakerWaveIcon, CheckCircleIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
@@ -28,8 +28,14 @@ const features = [
   {
     name: 'Checkpoint Navigation',
     description:
-      "Say a destination ('elevator'), get guided step-by-step with haptic feedback and accessibility-first design.",
+      "Say a destination ('elevator'), get guided step-by-step with accessibility-first design.",
     icon: MapIcon,
+  },
+  {
+    name: 'Danger-Level Haptics',
+    description:
+      "Smart vibration patterns based on danger levels - gentle pulses for obstacles, urgent vibrations for immediate hazards, keeping you safe through touch.",
+    icon: DevicePhoneMobileIcon,
   },
 ]
 
