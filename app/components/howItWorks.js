@@ -28,16 +28,39 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      {/* Video Container */}
+      {/* Video Container - Phone Shaped */}
       <div className="mt-16 flex justify-center">
-        <div className="relative rounded-2xl p-[6px] bg-gradient-to-br from-slate-500 to-slate-800 shadow-xl">
-          <video
-            controls
-            className="rounded-xl w-full max-w-3xl shadow-lg"
-          >
-            <source src="/Nokia HackHeist Demo Video_compressed.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="relative">
+          {/* Phone Frame */}
+          <div className="relative w-80 h-[600px] bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+            {/* Phone Screen */}
+            <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden relative">
+              {/* Status Bar */}
+              <div className="absolute top-0 left-0 right-0 h-8 bg-black flex items-center justify-between px-6 text-white text-sm z-10">
+                <span>9:41</span>
+                <div className="flex items-center gap-1">
+                  <div className="w-4 h-2 bg-white rounded-sm"></div>
+                  <div className="w-4 h-2 bg-white rounded-sm"></div>
+                  <div className="w-4 h-2 bg-white rounded-sm"></div>
+                </div>
+              </div>
+              
+              {/* Video Content */}
+              <video
+                controls
+                preload="metadata"
+                className="w-full h-full object-cover rounded-[2.5rem]"
+                style={{ marginTop: '2rem' }}
+              >
+                <source src="/demo.MOV" type="video/quicktime" />
+                <source src="/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              
+              {/* Home Indicator */}
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white rounded-full opacity-60"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

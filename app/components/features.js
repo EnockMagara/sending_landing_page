@@ -1,4 +1,4 @@
-import { MicrophoneIcon, EyeIcon, MapIcon, SpeakerWaveIcon, CheckCircleIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline'
+import { MicrophoneIcon, EyeIcon, MapIcon, SpeakerWaveIcon, CheckCircleIcon, DevicePhoneMobileIcon, LanguageIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
@@ -36,6 +36,12 @@ const features = [
     description:
       "Smart vibration patterns based on danger levels - gentle pulses for obstacles, urgent vibrations for immediate hazards, keeping you safe through touch.",
     icon: DevicePhoneMobileIcon,
+  },
+  {
+    name: 'Multilingual Support',
+    description:
+      "Speak and receive guidance in your native language. Seer supports multiple languages for voice input and output, making navigation accessible worldwide.",
+    icon: LanguageIcon,
   },
 ]
 
