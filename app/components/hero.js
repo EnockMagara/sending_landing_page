@@ -7,8 +7,12 @@ import Image from 'next/image';
 
 const navigation = [
   { name: 'Features', href: '#features' },
+  { name: 'Impact', href: '#impact' },
+  { name: 'Why We Built', href: '#why-we-built' },
   { name: 'How it Works', href: '#how-it-works' },
   { name: 'Architecture', href: '#architecture' },
+  { name: 'Roadmap', href: '#roadmap' },
+  { name: 'Process', href: '#development-process' },
 ]
 
 export default function LandingPage() {
