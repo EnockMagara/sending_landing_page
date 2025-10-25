@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(22, 21, 40);
+  --foreground: rgb(242, 245, 249);
+  --button-primary: rgb(227, 173, 125);
+  --button-secondary: rgb(16, 16, 12);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
+
+/* Font utility classes */
+.font-poppins {
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
