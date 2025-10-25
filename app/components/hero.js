@@ -94,7 +94,7 @@ export default function LandingPage() {
             alt="Seer Device"
             width={700} // Increased size for better visibility
             height={700}
-            className="absolute right-[-100px] top-1/2 transform -translate-y-1/2 opacity-40 md:opacity-60 lg:opacity-80 drop-shadow-2xl"
+            className="absolute right-[-200px] top-1/2 transform -translate-y-1/2 opacity-40 md:opacity-60 lg:opacity-80 drop-shadow-2xl"
           />
         </div>
 

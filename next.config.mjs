@@ -11,10 +11,6 @@ const nextConfig = {
   },
   // Ensure static files are served correctly
   trailingSlash: false,
-  // Enable experimental features if needed
-  experimental: {
-    optimizeCss: true,
-  },
 };
 
 export default nextConfig;
